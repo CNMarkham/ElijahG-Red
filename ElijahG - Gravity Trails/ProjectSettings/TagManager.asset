@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - ThrowingObject
   - Collectable
+  - DestroyTag
+  - Exit
   layers:
   - Default
   - TransparentFX
