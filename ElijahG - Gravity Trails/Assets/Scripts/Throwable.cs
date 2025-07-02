@@ -9,7 +9,10 @@ public class Throwable : MonoBehaviour
     public GameObject objectThrown;
     public Vector3 offset;
     public int throwableCounter;
+    public int enemysRemaining;
     public Text collectableCounter;
+    public Text remainingEnemys;
+
 
 
     void Start()
@@ -27,6 +30,8 @@ public class Throwable : MonoBehaviour
 
             if (throwableCounter > 0)
             {
+                enemysRemaining -= 1;
+                remainingEnemys.text = enemysRemaining.ToString();
                 Instantiate(objectThrown, throwablePosition, transform.rotation);
                 throwableCounter -= 1;
                 collectableCounter.text = throwableCounter.ToString();
@@ -52,6 +57,7 @@ public class Throwable : MonoBehaviour
         if (collision.gameObject.tag == "Collectable")
         {
             throwableCounter += 1;
+
             collectableCounter.text = throwableCounter.ToString();
             Destroy(collision.gameObject);
         }
