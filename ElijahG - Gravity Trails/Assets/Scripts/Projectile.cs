@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+// sword prefab uses this script to move
 
 public class Projectile : MonoBehaviour
 {
@@ -13,21 +13,23 @@ public class Projectile : MonoBehaviour
 
     void Start()
     {
-
+        // finds the direction of the player's throwable and stores it in "direction" variable
         direction = GameObject.FindGameObjectWithTag("Player").GetComponent<Throwable>();
-        Debug.Log(direction);
+        //Debug.Log(direction);
     }
 
-    private void DestroyThrowable()
-    {
-        Destroy(gameObject);
-    }
-
+    // checks if it collides with any 2D object
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log(collision.gameObject.tag);
+        // collides with enemy
         if (collision.gameObject.tag == "Enemy")
         {
             Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "Wall")
+        {
             Destroy(gameObject);
         }
     }
