@@ -8,12 +8,12 @@ public class StartScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene(1);
+      
     }
 
     public void OnMouseDown()
     {
-        
+          SceneManager.LoadScene(1);
     }
 
     // Update is called once per frame

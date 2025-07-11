@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EnemyCollision : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +14,9 @@ public class EnemyCollision : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
         }
     }

@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
 {
 
     public Throwable direction;
+    public Teleport teleport;
     public float speed;
 
 
@@ -15,6 +16,7 @@ public class Projectile : MonoBehaviour
     {
         // finds the direction of the player's throwable and stores it in "direction" variable
         direction = GameObject.FindGameObjectWithTag("Player").GetComponent<Throwable>();
+        teleport = FindFirstObjectByType<Teleport>();
         //Debug.Log(direction);
     }
 
@@ -25,6 +27,7 @@ public class Projectile : MonoBehaviour
         // collides with enemy
         if (collision.gameObject.tag == "Enemy")
         {
+            teleport.enemyCount--;
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
