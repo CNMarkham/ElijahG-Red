@@ -617,7 +617,7 @@ Transform:
   m_GameObject: {fileID: 361521702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.26, y: 0.48, z: 0}
+  m_LocalPosition: {x: -0.04, y: 0.53, z: 0}
   m_LocalScale: {x: 2.0324, y: 2.0324, z: 2.0324}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1453,7 +1453,6 @@ MonoBehaviour:
   throwableCounter: 0
   enemysRemaining: 5
   collectableCounter: {fileID: 1616312933}
-  remainingEnemys: {fileID: 1174479297}
 --- !u!1 &616432766
 GameObject:
   m_ObjectHideFlags: 0
@@ -3376,7 +3375,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.174568, y: 4.4957266, z: -14}
+  m_LocalPosition: {x: -28.69, y: 7.99, z: -14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3851,7 +3850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   direction: 1
-  maximumXPosition: 25
+  maximumXPosition: 23
   minimumXPosition: 20
 --- !u!114 &1171824273
 MonoBehaviour:
@@ -3876,9 +3875,10 @@ GameObject:
   - component: {fileID: 1174479296}
   - component: {fileID: 1174479298}
   - component: {fileID: 1174479297}
+  - component: {fileID: 1174479299}
   m_Layer: 5
   m_Name: EnemyRemainingText
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3944,6 +3944,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174479295}
   m_CullTransparentMesh: 1
+--- !u!114 &1174479299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174479295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1c159f9f2e549419cb2e9f7094d063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyUI: {fileID: 1174479297}
+  enemyRemaining: 5
 --- !u!1001 &1185542993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4398,7 +4412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 685338100550883256, guid: 8eebf489cbc0eb540b157aacd4624774, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.42
+      value: 21.26
       objectReference: {fileID: 0}
     - target: {fileID: 685338100550883256, guid: 8eebf489cbc0eb540b157aacd4624774, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5925,7 +5939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 453611604}
+  m_BoundingShape2D: {fileID: 0}
   m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!1 &1927922598

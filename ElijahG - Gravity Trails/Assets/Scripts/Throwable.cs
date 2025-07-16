@@ -11,7 +11,7 @@ public class Throwable : MonoBehaviour
     public int throwableCounter;
     public int enemysRemaining;
     public Text collectableCounter;
-    public Text remainingEnemys;
+
 
 
 
@@ -30,8 +30,7 @@ public class Throwable : MonoBehaviour
 
             if (throwableCounter > 0)
             {
-                enemysRemaining -= 1;
-                remainingEnemys.text = enemysRemaining.ToString();
+
                 Instantiate(objectThrown, throwablePosition, transform.rotation);
                 throwableCounter -= 1;
                 collectableCounter.text = throwableCounter.ToString();

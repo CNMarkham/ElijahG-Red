@@ -10,6 +10,7 @@ TagManager:
   - DestroyTag
   - Exit
   - Wall
+  - UI
   layers:
   - Default
   - TransparentFX
