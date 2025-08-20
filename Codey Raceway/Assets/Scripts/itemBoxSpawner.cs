@@ -9,7 +9,7 @@ public class itemBoxSpawner : MonoBehaviour
     public int numberOfBoxes;
 
     public int modifyXPosition;
-    public int modifyZPostion;
+    public int modifyZPosition;
 
     void Start()
     {
@@ -26,7 +26,7 @@ public class itemBoxSpawner : MonoBehaviour
                 new Vector3(
                     transform.position.x + modifyXPosition * i,
                     transform.position.y,
-                    transform.position.z + modifyXPosition * i
+                    transform.position.z + modifyZPosition * i
                     ),
                 transform.rotation);
         }
