@@ -8,13 +8,13 @@ public class itemBoxPickup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -24,5 +24,8 @@ public class itemBoxPickup : MonoBehaviour
         Invoke("show", showTime);
     }
 
-    public string show;
-}
+    public void show()
+    {
+
+    }
+ }
