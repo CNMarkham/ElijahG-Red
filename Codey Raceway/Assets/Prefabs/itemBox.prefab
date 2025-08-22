@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8052820929877714156}
   - component: {fileID: 231229563505824333}
   - component: {fileID: 9160007605401468713}
+  - component: {fileID: 8740237834361462372}
+  - component: {fileID: -6487966576448510076}
   m_Layer: 0
   m_Name: itemBox
   m_TagString: itemBoxes
@@ -105,3 +107,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8740237834361462372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2871068410466807378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1aab15fcb00c674794b44a83c4836ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 0.001
+--- !u!114 &-6487966576448510076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2871068410466807378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e5de3dc6cfbfd44dae3028f1ed41354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

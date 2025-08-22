@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class itemBoxFeatures : MonoBehaviour
+public class itemBoxPickup : MonoBehaviour
 {
-    public float rotateSpeed = 0.001f;
+    public float showTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,15 @@ public class itemBoxFeatures : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.Rotate(transform.position*rotateSpeed);
+        
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        gameObject.SetActive(false);
+
+        Invoke("show", showTime);
+    }
+
+    public string show;
 }
