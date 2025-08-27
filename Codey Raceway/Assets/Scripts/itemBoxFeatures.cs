@@ -8,7 +8,12 @@ public class itemBoxFeatures : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("itemBoxRespawn", 10f);
+    }
+
+    private void itemBoxRespawn()
+    {
+        gameObject.SetActive(true);
     }
 
     // Update is called once per frame
