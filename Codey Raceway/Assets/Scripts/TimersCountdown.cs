@@ -36,7 +36,7 @@ public class TimersCountdown : MonoBehaviour
             startCountdown.text = "";
             totalLapTime -= Time.deltaTime;
             lapTime.text = Mathf.Round(totalLapTime).ToString();
-            codeyMove.Speed = 300;
+            codeyMove.Speed = 350;
         }
 
         if (totalLapTime <= 0)

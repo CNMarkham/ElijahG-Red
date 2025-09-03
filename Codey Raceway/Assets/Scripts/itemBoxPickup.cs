@@ -4,28 +4,16 @@ using UnityEngine;
 
 public class itemBoxPickup : MonoBehaviour
 {
-    public float showTime;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void OnCollisionEnter(Collision collision)
     {
         gameObject.SetActive(false);
 
-        Invoke("show", showTime);
+        Invoke("itemBoxRespawn", 10f);
     }
 
-    public void show()
+    private void itemBoxRespawn()
     {
-
+        gameObject.SetActive(true);
     }
  }
