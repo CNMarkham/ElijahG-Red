@@ -16,12 +16,24 @@ public class ShellCollisionDestroy : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject. == "obstacles")
+        {
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+            Debug.Log("Collide");
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("test");
         if (collision.gameObject.tag == "obstacles")
         {
             Destroy(gameObject);
             Destroy(collision.gameObject);
+            Debug.Log("Collide");
         }
 
     }
