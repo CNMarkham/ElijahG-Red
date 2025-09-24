@@ -7,7 +7,7 @@ public class ShellMovement : MonoBehaviour
 
     void Update()
     {
-        transform.position += transform.forward * Time.deltaTime * 45;
+        transform.position += transform.forward * Time.deltaTime * 80;
     }
 
 

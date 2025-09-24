@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NavMeshShell Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7272998506494055720, guid: 488f4563bfaa9994db09a9f4a04c3492, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9100897387672467541, guid: 488f4563bfaa9994db09a9f4a04c3492, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -100,7 +104,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 13.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

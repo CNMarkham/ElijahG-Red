@@ -13,13 +13,13 @@ public class NavMeshMovement : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         agent.stoppingDistance = 0.1f;
-        agent.destination = GameObject.FindGameObjectWithTag ("obstacles").transform.position;
+        agent.destination = GameObject.FindGameObjectWithTag("obstacles").transform.position;
         Debug.Log("finish"+ agent.destination);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(agent.pathStatus);
+        //sDebug.Log(agent.pathStatus);
     }
 }
