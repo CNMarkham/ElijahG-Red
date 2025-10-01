@@ -33,4 +33,11 @@ public class CodeyMove : MonoBehaviour
         }
         
     }
+
+    public void SpeedBoost()
+    {
+        Speed += 100;
+        Debug.Log("speed " + Speed);
+    }
+
 }

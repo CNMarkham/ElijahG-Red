@@ -18,24 +18,24 @@ public class ShellCollisionDestroy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("trigger " + other.gameObject.name);
+        //Debug.Log("trigger " + other.gameObject.name);
         if (other.gameObject.tag == "obstacles")
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
 
-            Debug.Log("Collide");
+            //Debug.Log("Collide");
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("test " + collision.gameObject.name);
+        //Debug.Log("test " + collision.gameObject.name);
         if (collision.gameObject.tag == "obstacles")
         {
             Destroy(gameObject);
             Destroy(collision.gameObject);
-            Debug.Log("Collide");
+            //Debug.Log("Collide");
         }
 
     }

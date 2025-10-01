@@ -16,7 +16,7 @@ public class SelectRandomPowerup : MonoBehaviour
     {
         if (Input.GetKeyDown(space) && chosenPowerup != null)
         {
-            Instantiate(chosenPowerup, transform.position + transform.forward *3, transform.rotation);
+            Instantiate(chosenPowerup, transform.position + transform.forward *3 + Vector3.up*2, transform.rotation);
             chosenPowerup = null;
         }
     }

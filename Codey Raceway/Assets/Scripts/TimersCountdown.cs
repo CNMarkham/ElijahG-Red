@@ -28,7 +28,7 @@ public class TimersCountdown : MonoBehaviour
         {
             totalCountdownTime -= Time.deltaTime;
             startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
-            codeyMove.Speed = 0;
+            //codeyMove.Speed = 0;
         }
 
         if (totalCountdownTime <= 0)
@@ -36,12 +36,13 @@ public class TimersCountdown : MonoBehaviour
             startCountdown.text = "";
             totalLapTime -= Time.deltaTime;
             lapTime.text = Mathf.Round(totalLapTime).ToString();
-            codeyMove.Speed = 350;
+            
         }
 
         if (totalLapTime <= 0)
         {
             print("Time is up!");
+            codeyMove.Speed = 0;
         }
 
     }
