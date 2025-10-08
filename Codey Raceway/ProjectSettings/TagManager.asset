@@ -9,6 +9,7 @@ TagManager:
   - itemBoxes
   - obstacles
   - finish
+  - terrain
   layers:
   - Default
   - TransparentFX
