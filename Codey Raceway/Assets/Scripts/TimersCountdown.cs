@@ -28,8 +28,18 @@ public class TimersCountdown : MonoBehaviour
         {
             totalCountdownTime -= Time.deltaTime;
             startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
-            //codeyMove.Speed = 0;
+            codeyMove.Speed = 0;
         }
+
+        if (totalCountdownTime < 1)
+        {
+            totalCountdownTime -= Time.deltaTime;
+            startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
+            codeyMove.Speed = 450;
+        }
+
+
+
 
         if (totalCountdownTime <= 0)
         {
